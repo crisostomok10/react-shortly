@@ -1,0 +1,158 @@
+.hero-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 6rem;
+    margin-bottom: 9rem;
+}
+
+.hero-left {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin-left: auto;
+    justify-content: center;
+}
+
+.hero-header {
+    font-size: 5rem;
+    font-weight: 700;
+    letter-spacing: -3px;
+    line-height: 5.5rem;
+    color: hsl(260, 8%, 14%);
+}
+
+.hero-body {
+    font-size: 1.35rem;
+    padding-bottom: 2rem;
+    color: hsl(257, 7%, 63%);
+}
+
+.hero-btn {
+    font-size: 1.35rem;
+    padding: .6rem 2.5rem;
+}
+
+
+.hero-right {
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+.hero-image {
+    position: relative;
+    left: 5rem;
+}
+
+@media (max-width: 767.98px) { 
+    .hero-container {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        text-align: center;
+        margin-top: 1rem;
+        margin-bottom: 10rem;
+    }
+
+    .hero-left {
+        margin-top: 2rem;
+        margin-left: 0;
+        width: 90%;
+    }
+
+    .hero-header {
+        font-size: 2.5rem;
+        letter-spacing: -1px;
+        line-height: 3rem;
+    }
+
+    .hero-body {
+        margin-top: 1rem;
+        font-size: 1.2rem;
+    }
+
+    .hero-right {
+        left: 2rem;
+    }
+
+    .hero-right img {
+        width: 130%;
+    }
+
+    .hero-image {
+        left: 2rem;
+    }
+ }
+
+ @media (min-width: 768px) and (max-width: 991.98px) {
+
+    .hero-container {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        text-align: center;
+        margin-top: 3rem;
+        margin-bottom: 10rem;
+    }
+
+    .hero-left {
+        margin-top: 3rem;
+        margin-left: 0;
+        width: 80%;
+    }
+
+    .hero-header {
+        font-size: 2.5rem;
+        letter-spacing: -1px;
+        line-height: 3rem;
+    }
+
+    .hero-body {
+        margin-top: 1rem;
+        font-size: 1.5rem;
+    }
+
+    .hero-right {
+        left: 2rem;
+        width: 100%;
+    }
+
+    .hero-right img {
+        width: 110%;
+    }
+
+    .hero-image {
+        left: 5rem;
+    }
+
+ }
+
+ @media (min-width: 991.98px) and (max-width: 1390px) {
+
+    .hero-header {
+        font-size: 3.5rem;
+        letter-spacing: -1px;
+        line-height: 4rem;
+    }
+
+    .hero-body {
+        margin-top: 1rem;
+        font-size: 1rem;
+    }
+
+    .hero-image {
+        left: 2rem;
+    }
+ }
+
+ @media (min-width:1441px) {
+    .hero-header {
+        font-size: 5rem;
+        letter-spacing: -1px;
+        line-height: 6rem;
+    }
+
+    .hero-body {
+        margin-top: 1rem;
+        font-size: 1.5rem;
+    }
+ }

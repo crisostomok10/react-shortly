@@ -1,0 +1,364 @@
+.statistics-container {
+    background-color: #eff1f7;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.statistics-wrap {
+    width: 80%;
+    padding: 11rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.statistics-text-container {
+    text-align: center;
+    padding-bottom: 10rem;
+    max-width: 545px;
+}
+
+.statistics-header {
+    font-size: 2.7rem;
+    font-weight: 700;
+}
+
+.statistics-body {
+    font-size: 1.2rem;
+    color: hsl(257, 7%, 63%);
+}
+
+.statistic-cards-container {
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.statistic-card {
+    /* flex: 20%; */
+    position: relative;
+    background-color: #fff;
+    border-radius: .5rem;
+    max-width: 375px;
+}
+
+.card-1 {
+    bottom: 2.5rem;
+} 
+
+.card-2 {
+    margin-left: 1.6rem;
+    margin-right: 1.6rem;
+}
+
+.card-3 {
+    top: 2.5rem;
+}
+
+.icon-container {
+    background-color: hsl(257, 27%, 26%);
+    width: 5.5rem;
+    height: 5.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    position: absolute;
+    top: -2.5rem;
+    left: 2rem;
+}
+
+.card-text-container {
+    padding-top: 2rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-bottom: 2.5rem;
+}
+
+.card-header {
+    padding-top: 3rem;
+    padding-bottom: 1rem;
+    font-weight: 700;
+    font-size: 1.4rem;
+    color: hsl(260, 8%, 14%);
+}
+
+.card-body {
+    color: hsl(257, 7%, 63%);
+}
+
+.background-line {
+    position: absolute;
+    top: 43%;
+    height: .5rem;
+    width: 32rem;
+    background-color: hsl(180, 66%, 49%);
+}
+
+.url-field-container {
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    top:-86px
+}
+
+.url-field-wrap {
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    background-color: hsl(257, 27%, 26%);
+    background-image: url("../../images/bg-shorten-desktop.svg");
+    background-size: cover;
+    background-position: center;
+    padding-top: 3.5rem;
+    padding-bottom: 3.5rem;
+    border-radius: .5rem;
+}
+
+.url-input-field {
+    height: 4rem;
+    width: 68%;
+    border-radius: .5rem;
+    border: 0px;
+    font-size: 1.2rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    color: hsl(257, 7%, 63%);
+}
+
+.url-input-field:focus {
+    outline: none;
+    /* border: 1px solid black; */
+}
+
+.url-input-field:disabled {
+    background-color: #fff;
+}
+
+.url-submit-btn {
+    width: 16%;
+    margin-left: 1.5rem;
+    border-radius: .5rem;
+    border: 0px;
+    background-color: hsl(180, 66%, 49%);
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #fff;
+    cursor: pointer;
+}
+
+.url-submit-btn:hover {
+    background-color: hsl(180, 67%, 80%);
+}
+
+.url-submit-btn:disabled {
+    background-color: hsl(180, 67%, 80%);
+    cursor: default;
+}
+
+.short-url-wrap {
+    margin-top: 7rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.url-success-msg {
+    margin-bottom: 1.5rem;
+}
+
+.short-url-container {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    border-radius: .5rem;
+    padding: 1rem 2rem;
+
+}
+
+.long-url {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 60%;
+}
+
+.short-url a {
+    color: hsl(180, 66%, 49%);
+    text-decoration: none;
+    width: 40%;
+}
+
+.short-url button {
+    margin-left: 1.5rem;
+    border-radius: .5rem;
+    padding: .5rem 0;
+    width: 7rem;
+}
+
+.copied-btn {
+    width: 7rem;
+    background-color: hsl(257, 27%, 26%);
+}
+
+.copied-btn:hover {
+    background-color: hsl(257, 27%, 26%);
+    cursor: default;
+}
+
+.loader {
+    margin-top: 10rem;
+    border: 15px solid #fff; /* Light grey */
+    border-top: 15px solid hsl(180, 66%, 49%); /* Blue */
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    animation: spin 2s linear infinite;
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+
+#hidden {
+    display: none;
+}
+
+.red-outline {
+    border: 2px solid red;
+}
+
+
+
+@media (max-width: 991.98px) { 
+    .statistics-wrap {
+        width: 90%;
+        padding-top: 5rem;
+        padding-bottom: 10rem;
+    }
+
+    .statistics-header {
+        font-size: 1.8rem;
+    }
+
+    .statistics-body {
+        font-size: 1rem;
+    }
+
+    .statistic-cards-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .card-text-container {
+        padding-left: 1.7rem;
+        padding-right: 1.7rem;
+    }
+
+    .card-2 {
+        margin: 3rem 0;
+    }
+
+    .icon-container {
+        left: 0;
+        right: 0;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .background-line {
+        transform: rotate(90deg);
+        top: 47%;
+    }
+
+    .url-field-container {
+        top:-80px
+    }
+
+    .url-field-wrap {
+        flex-direction: column;
+        align-items: center;
+        width: 90%;
+        padding-top: 1.5rem;
+        padding-bottom: 1.5rem;
+        background-image: url("../../images/bg-shorten-mobile.svg");
+        background-size: 100%;
+        background-position: right top;
+        background-size: initial;
+        background-repeat: no-repeat;
+    }
+
+    .url-input-field {
+        width: 85%;
+        height: 3rem;
+        font-size: 1rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    .url-submit-btn {
+        width: 85%;
+        height: 3rem;
+        font-size: 1.1rem;
+        margin-left: 0;
+        margin-top: 1rem;
+
+    }
+
+    .url-success-msg {
+        width: 90%;
+        text-align: center;
+        font-size: 1rem;
+    }
+
+    .long-url {
+        width: 100%;
+        border-bottom: 1px lightgray solid;
+        padding-bottom: .5rem;
+    }
+
+    .short-url-container {
+        width: 90%;
+        flex-direction: column;
+    }
+
+    .short-url {
+        width: 100%;
+        margin-top: .5rem;
+    }
+
+    .short-url button {
+        width: 100%;
+        margin-left: 0;
+        margin-top: .5rem;
+    }
+
+    .loader {
+        margin-top: 7rem;
+    }
+ }
+
+ @media (min-width: 992px) and (max-width: 1390px) {
+
+    .statistics-wrap {
+        padding-top: 5rem;
+        padding-bottom: 10rem;
+    }
+
+    .long-url {
+        font-size: .8rem;
+    }
+
+    .short-url {
+        font-size: .8rem;
+    }
+ }
